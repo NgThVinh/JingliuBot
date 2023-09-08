@@ -1,0 +1,5 @@
+config.json
+logs/*
+!example.log
+node_modules
+package-lock.json
