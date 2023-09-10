@@ -10,6 +10,9 @@ loadCommands(client);
 const { loadEvents } = require("./Handlers/EventHandler")
 loadEvents(client);
 
+// Task handler
+const { loadTasks } = require("./Handlers/TaskHandler")
+loadTasks(client);
 
 // Component handler
 const { loadComponents } = require("./Handlers/ComponentHandler")

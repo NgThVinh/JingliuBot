@@ -17,6 +17,7 @@ class BotClient extends Client {
 			},
 		});
 
+        this.prefix = '!';
         this.logger = require('../utils/Logger');
         this.commands = new Collection();
         this.events = new Collection();

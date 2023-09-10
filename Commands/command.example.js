@@ -1,11 +1,12 @@
 const { SlashCommandBuilder, PermissionFlagsBits } = require("discord.js");
 
 module.exports = {
-    disable: true,
-    hidden: true,
-    userPermissions: [],
-    blacklist: [],
-    whitelist: [],
+    disable: true, // whether this command is available
+    hidden: true, // whether this command is showed in `help` command
+    hasRole: [],
+    hasAllRole: [],
+    blacklistChannel: [],
+    whitelistChannel: [],
     nsfw: true,
     cooldown: 5,
     data: new SlashCommandBuilder()
