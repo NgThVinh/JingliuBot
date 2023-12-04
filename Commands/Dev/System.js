@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, PermissionFlagsBits, EmbedBuilder } = require("discord.js");
-const { default_embed_color } = require("../../config.json").bot;
+const { default_embed_color } = require("../../config.json");
 const osu = require('node-os-utils');
 const os = require('node:os');
 // const si = require("systeminformation");

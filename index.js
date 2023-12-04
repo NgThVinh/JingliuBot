@@ -1,6 +1,6 @@
-const { bot } = require('./config.json');
 const BotClient = require('./structures/Client')
 const client = new BotClient();
+require('dotenv').config();
 
 // Command handler
 const { loadCommands } = require("./Handlers/CommandHandler")
@@ -26,4 +26,4 @@ process.on('uncaughtledException', error => {
 	client.logger.error('An Error just occured:', error);
 });
 
-client.login(bot.token);
+client.login(process.env.TOKEN);
