@@ -8,7 +8,9 @@ async function loadCommands(client) {
     const Files = await loadFiles('Commands');
     Files.forEach((file) => {
         const command = require(file);
-        client.commands.set(command.data.name, command);
+        if (!command.disable) { 
+            client.commands.set(command.data.name, command);
+        }
 
         // commandsArray.push(command.data.toJSON());
         client.logger.debug(`Command '${command.data.name}' loaded.`);
