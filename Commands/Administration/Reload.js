@@ -4,21 +4,22 @@ const { loadEvents } = require("../../Handlers/EventHandler");
 const { loadTasks } = require("../../Handlers/TaskHandler");
 
 module.exports = {
+    hidden: true,
     data: new SlashCommandBuilder()
         .setName("reload")
-        .setDescription("Reloads all commands/events.")
+        .setDescription("Reloads all commands/events")
         .setDefaultMemberPermissions(PermissionFlagsBits.ADMINISTRATOR)
         .addSubcommand((options) => options
             .setName("commands")
-            .setDescription("Reloads all commands.")
+            .setDescription("Reloads all commands")
         )
         .addSubcommand((options) => options
             .setName("tasks")
-            .setDescription("Reloads all tasks.")
+            .setDescription("Reloads all tasks")
         )
         .addSubcommand((options) => options
             .setName("events")
-            .setDescription("Reloads all events.")
+            .setDescription("Reloads all events")
         ),
     /**
      * @param {ChatInputCommandInteraction} interaction

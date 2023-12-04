@@ -6,7 +6,7 @@ module.exports = {
     nsfw: true,
     timeout: 10,
     data: new SlashCommandBuilder()
-        .setName("buttonTest")
+        .setName("button_test")
         .setDescription("Command Description")
         .setDefaultMemberPermissions(PermissionFlagsBits.ADMINISTRATOR),
     /**
